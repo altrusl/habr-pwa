@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Hello Habr</title>
+        <script src="hh.js"></script>
+        <link rel="stylesheet" href="hh.css" />
+        <script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+                .then(function(registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div class="center">
+            <p id="text"></p>
+        </div>
+        <div id="logo"></div>
+    </body>
+</html>
