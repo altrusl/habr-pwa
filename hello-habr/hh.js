@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch("hh.txt").then(data => data.text()).then(data => {
+    fetch("hh.txt?mode=nocache").then(data => data.text()).then(data => {
         animateText(data)
       });
 }
@@ -12,5 +12,5 @@ function animateText(data) {
         return clearInterval(interval);
     };
     ele.innerHTML += txt.shift();
-    }, 200);
+    }, 150);
 }
