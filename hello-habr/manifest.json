@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/habr-pwa/hello-habr/",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/habr-pwa/hello-habr/",
   "theme_color": "#3367D6"
 }
